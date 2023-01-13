@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="51px" viewBox="0 0 50 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>sucuri_icons__performance</title>
+    <g id="Redesign" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-308.000000, -76.000000)">
+            <g id="sucuri_icons__performance" transform="translate(308.000000, 76.611000)">
+                <polyline id="Fill-1" fill="#008673" points="39.997 14.023 32.986 7.029 39.997 0 47.009 7.029 39.997 14.023"></polyline>
+                <polyline id="Fill-2" fill="#1B262C" points="5 45.003 5 0.003 0 0.003 0 50.003 50 50.003 50 45.003 5 45.003"></polyline>
+                <path d="M14.999,27 L14.999,42 M27.498,22 L27.498,42 M39.997,17 L39.997,42" id="Stroke-3" stroke="#1B262C" stroke-width="5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

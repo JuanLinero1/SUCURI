@@ -1,0 +1,499 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    /* HEADER AND FOOTER */
+    --blue: #1b272d;
+    --green: #008673;
+    --gray: #f0f1f2;
+    --nightGray: #3b4245;
+    --celestialBlue: #f0f4f5;
+    --lightgray: #f0f1f2; 
+}
+
+a{
+    cursor: pointer !important;
+    text-decoration: none;
+}
+.bigBtn{
+    padding: 1.0625rem 2.1875rem;
+
+    border: none;
+    border-radius: 0.3125rem;
+
+    color: white;
+    background: var(--green);
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+.btn1{
+    padding: 1.0625rem 2.0625rem;
+
+    background: white;
+    color: black;
+    font-weight:700;
+    font-size: 1.0625rem;
+
+    cursor: pointer;
+
+    border: 0.0625rem solid black; 
+    border-radius: 0.5rem;
+}
+.btn1:hover{
+    transform: scale(0.98);
+    transition: all .3s ease;
+    border: 0.0625rem solid black; 
+
+}
+.btn1:active{
+    transform: scale(1.02);
+}
+
+
+header{
+    position:fixed;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 7.5rem;
+
+    width: 100%;
+    height: 5.625rem;
+
+    background: var(--blue);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+    width: 78%;
+    height: 100%;
+}
+header .container nav ul{
+    display: flex;
+    /* background-color: blue; */
+    gap: 1.875rem;
+}
+header .container nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+header .container nav ul li{
+    list-style: none;
+}
+header .container .infoContainer{
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 1.25rem;
+}
+
+header .container .infoContainer .login{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.625rem;
+
+}
+header .container .infoContainer .login a{
+    color: white;
+    text-decoration: none;
+}
+header .container .infoContainer .login i{
+    color: white;
+}
+
+
+/* MAIN */
+main{
+    position: relative;
+    z-index: 2;
+    top: 5.625rem;
+    padding: 0 6.25rem;
+    overflow: hidden;
+    height: 4700px;
+    scrollbar-width:var(--green);
+}
+main .landPage{
+    display: flex;
+    align-items: center; 
+    padding: 6.25rem 4.375rem;
+
+}
+main .landPage .cornerTriangle{
+    position: absolute;
+    background: var(--blue);
+    top: -9.375rem;
+    right: -12.5rem ;
+    width: 31.25rem;
+    height: 18.75rem;
+    transform: rotate(45deg);
+}
+main .landPage .left{ width: 60%; }
+main .landPage .left h1{ font-size: 3.75rem; }
+main .landPage .left p{
+    width: 90%;
+    margin: 1.875rem 0 2.5rem 0;
+    font-size: 1rem;
+}
+main .landPage .left .btnContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.875rem;
+}
+main .landPage .right{ width: 40%; }
+main .landPage .right img{ width: 100%; }
+
+
+/* ASSOCIATE SECTION */
+main .associateSection{ 
+    position: relative;
+    left: -6.25rem;
+    text-align: center;
+}
+main .associateSection p{
+    position: relative;
+    left: 6.25rem;
+    top: -0.625rem;
+    font-size: 1.125rem;
+
+}
+main .associateSection .associateContainer{
+    overflow: hidden;
+    width: 100vw;
+    height: 5em;
+    background: var(--gray);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6.25rem;
+}
+
+/* UTILITIES CARDS */
+main .utilities{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 21.875rem;
+    margin: 4.375rem 0 0 0;
+}
+main .utilities a{
+    color: black;
+    text-decoration: none;
+    height: 100%; /* A LITTLE TRICK*/
+}
+main .utilities .card{
+    border-right: lightgray 1px solid;
+    margin: 0 0.625rem;
+    height: 100%;
+    display: flex;
+    padding: 22% 0;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    gap: 1.1rem;
+}
+main .utilities .card img{ 
+    margin-bottom: 30px;
+}
+main .utilities .card span .chevronIcon{
+    position: relative;
+    top: 2px;
+}
+main .utilities .card p{
+    width: 80%;
+}
+
+/* RESOURCES */
+main .resources{
+    margin: 50px 0 0 0;
+}
+
+main .resources .info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+main .resources .info h1{
+    font-size: 2.8em;
+}
+main .resources .info p{ width: 40%; }
+main .resources .cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}   
+main .resources .cardContainer img{ width: 100%; }
+main .resources .cardContainer .card{
+    display: flex;
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    width: calc(86% / 3);
+}
+main .resources .cardContainer .card p{
+    font-size: 17px;
+    width: 90%;
+    opacity: .8;
+    font-weight: 400;
+}       
+main .resources .cardContainer .rightLine{ border-right: 2px lightgray solid; }
+
+/* PRICING */
+main .pricing{
+    width: 100%;
+    height: 1000px;
+    margin: 10rem 0 300px 0;
+    position: relative;
+}
+main .pricing .info{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+main .pricing .info h1{ font-size: 2.7rem; }
+main .pricing .info p{
+    width: 500px;
+    font-size: 18px;
+}
+main .pricing .btnContainter{
+    margin: 20px 0 0 0;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+main .pricing .btnContainter .borderContainer{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    border: 2px rgba(0, 0, 0, .1) solid;
+    padding: 0 20px;
+
+}
+main .pricing .btnContainter .dinamicBtn{
+    font-size: 1.2em;
+    color: black;
+    background-color: transparent;
+    border: none;
+    padding: 0 20px;
+    height: 70%;
+    cursor: pointer;
+}
+
+/* LEFT SIDE */
+main .pricing .leftSideInfo{
+    width: 50%;
+    margin-top: 180px;
+}
+main .pricing .leftSideInfo .upperBody h4{
+    font-size: 1.2em;
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    align-items: center;
+}
+main .pricing .leftSideInfo .lowerBody{
+    margin: 110px 0 0 0;
+    width:50%;
+}
+main .pricing .leftSideInfo .lowerBody .innerContainer{
+    display: flex;
+    margin: 10px 0 0 0;
+    justify-content: space-between;
+    padding: 10px 10px;
+    height: 3.125rem;
+    align-items: center;
+}
+main .pricing .leftSideInfo .lowerBody .innerContainer p{
+    width: 85%;
+    font-size: 15px;
+}
+main .pricing .leftSideInfo .lowerBody .innerContainerBlue{
+    background: var(--celestialBlue);
+    
+}
+main .pricing .leftSideInfo .lowerBody .tooltipContainer{
+    position: relative;
+    left: 220px;
+    cursor: pointer; 
+}
+main .pricing .leftSideInfo .lowerBody .questionIcon{
+    cursor: pointer;
+}
+main .pricing .leftSideInfo .lowerBody .toolTip{
+    background-color: rgba(245, 245, 245);
+    transition: all .5s ease;
+    /* background-color: black; */
+    padding: 10px;
+    position: absolute;
+    color: black;
+    width: 300px;
+    z-index: 1000;
+    top: -30px;   
+    left: 70px;
+    opacity: 0;
+}
+main .pricing .innerPricingContainer{
+    display: flex;
+}
+
+/* MID CONTAINER */
+.pricing .pricingContainer .platformPlan{
+    display: flex;
+    gap: 20px;
+    margin: 100px 0 0 0;
+    width: 50%;
+    position: absolute; 
+    left: 320px;
+    opacity: 0;
+}
+.pricing .pricingContainer .container{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.pricing .pricingContainer .container p{
+    font-style: italic;
+    opacity: .7;
+    margin: 30px 0 40px 0;
+}
+.pricing .pricingContainer .container .number{
+    margin-bottom: 30px;
+}
+.pricing .pricingContainer .container .table{
+
+}
+.pricing .pricingContainer .container .table .innerContainer{
+    margin: 50px 0 30px 0;
+}
+.pricing .pricingContainer .container .table .innerContainer span{
+    margin: 38px 0 0 0;
+}
+.pricing .pricingContainer .container .table span{
+    display: block;
+    margin: 40px 0;
+} 
+.pricing .pricingContainer .firewallPlan{
+    /* display: none; */
+    display: flex;
+    margin: 100px 0 0 0;
+    width: 50%;
+    opacity: 0;
+    position: absolute;
+    left: 350px; 
+}
+
+
+/* STATISTIC */
+main .statistic{ 
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+    width: 100vw;
+    position: relative;
+    left: -100px;
+    background: var(--lightgray);
+    text-align: center;
+    padding: 40px 90px;
+}
+main .statistic .nums{
+    width: 500px;
+}
+main .statistic .nums h1{ 
+    color: var(--green);
+    font-size: 4.5rem;
+}
+
+
+/* HELP CENTER */
+main .helpCenter{
+    background: url(./images/lastPanel/SU_USF_help_001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    left: -100px;
+    height: 500px;
+}
+main .helpCenter .card{
+    width: 450px;
+    height: 350px;
+    background: white;
+    position: absolute;
+    right: 200px;
+    top: 15%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+}
+main .helpCenter .card h1{
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+main .helpCenter .card p a{
+    text-decoration: underline;
+    font-weight: 700;
+    color: black;
+}
+
+/* LAST PANEL */
+main .lastPanel{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 0 0; 
+}
+main .lastPanel .outerDiv img{
+    width: 50px;
+}
+main .lastPanel .outerDiv{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 3px solid var(--lightgray);
+    border-right: 3px solid var(--lightgray);
+    padding: 30px 40px;
+    height: 200px;
+    width: 550px;
+}
+main .lastPanel .outerDiv p{
+    margin-top: 10px;
+    line-height:25px;
+}
+main .lastPanel .container2 .outerDiv {
+    border-right: none;
+}
